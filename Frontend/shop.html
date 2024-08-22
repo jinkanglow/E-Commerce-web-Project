@@ -1,0 +1,499 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni 
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+* Modified by Current Author: JK
+*user template from https://www.smarteyeapps.com/
+*/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap4" />
+
+	<!-- Bootstrap CSS -->
+	<link href="css/boostrap.min3.4.1.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link href="css/tiny-slider.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- <link href="css/style.css" rel="stylesheet"> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>HappyFood</title>
+</head>
+
+<body>
+
+	<!-- Start Header/Navigation -->
+	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
+		arial-label="HappyFood_navigation_bar">
+
+		<div class="container">
+			<a class="navbar-brand" href="index.html">HappyFood<span>.</span></a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars_HappyFood"
+				aria-controls="navbars_HappyFood" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbars_HappyFood">
+				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+					<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+					<li class="active"><a class="nav-link" href="shop.html">Shop</a></li>
+					<li><a class="nav-link" href="about.html">About us</a></li>
+					<li><a class="nav-link" href="contact.html">Contact us</a></li>
+				</ul>
+
+				<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+					<li><a class="nav-link" href="Login.html"><img src="images/user.svg"></a></li>
+					<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+	<!-- End Header/Navigation -->
+
+	<!-- Start Hero Section -->
+	<div class="hero" style="height:50%;">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" style="z-index: 1">
+
+					<!-- Wrapper for slides -->
+
+					<!--content 1-->
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="content" id="content1">
+								<div class="col-lg-6">
+									<div class="intro-excerpt">
+										<h1>HEALTHY FOOD <span clsas="d-block">Fresh Pineapple</span></h1>
+										<p class="mb-6">All products are from our private farms.</p>
+										<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#"
+												class="btn btn-white-outline">Explore</a></p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="intro-img">
+										<img src="images/pineapple.png" alt="Image" class="img-fluid"
+											style="position: relative; z-index: -1;">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+
+							<!--content 2-->
+							<div class="content" id="content2">
+								<div class="col-lg-6">
+									<div class="intro-excerpt">
+										<h1>ORGANIC FRUITS <span class="d-block">Fresh Juice</span></h1>
+										<p class="mb-4">All products are from our private farms.</p>
+										<p>
+											<a href="" class="btn btn-secondary me-2">Shop Now</a>
+											<a href="#" class="btn btn-white-outline">Explore</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="intro-img">
+									<img src="images\fresh juice.png" alt="Image" class="img-fluid"
+										style="position: relative; z-index: -1;">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Indicators -->
+					<div style="margin-top: 7%;">
+						<ol class="carousel-indicators" style="position: relative;">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+						</ol>
+					</div>
+
+				</div>
+
+				<div class="rightmost">
+					<div class="SortBY-Container">
+						<select name="SortBy" id="SortBy" class="orderby">
+							<option value="manual">Featured</option>
+							<option value="best-selling">Best Selling</option>
+							<option value="title-ascending">Alphabetically, A-Z</option>
+							<option value="title-descending">Alphabetically, Z-A</option>
+							<option value="price-ascending">Price, low to high</option>
+							<option value="price-descending">Price, high to low</option>
+							<option value="created-descending">Date, new to old</option>
+							<option value="created-ascending">Date, old to new</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="untree_co-section product-section before-footer-section">\
+					<div class="container">
+						<div class="row">
+
+							<!-- Start Column 2 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\apple.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Apple</h3>
+									<strong class="product-price">RM1.50</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 2 -->
+
+							<!-- Start Column 3 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\banana.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Banana</h3>
+									<strong class="product-price">RM8.90</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 3 -->
+
+							<!-- Start Column 4 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\coconut.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Coconut</h3>
+									<strong class="product-price">RM3.00</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 4 -->
+
+							<!-- Start Column 5 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Green Pear.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Green Pear</h3>
+									<strong class="product-price">RM2.50</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 5 -->
+
+							<!-- Start Column 6 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Hard Candly.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Hard Candly</h3>
+									<strong class="product-price">RM3.50</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 6 -->
+
+							<!-- Start Column 7 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Lime.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Lime</h3>
+									<strong class="product-price">RM1.50</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 7 -->
+
+							<!-- Start Column 8 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Melon.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Melon</h3>
+									<strong class="product-price">RM9.50</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 8 -->
+
+							<!-- Start Column 9 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Currant.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Currants</h3>
+									<strong class="product-price">RM10.00</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 9 -->
+
+							<!-- Start Column 10 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Persimmon.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Persimmon</h3>
+									<strong class="product-price">RM2.50</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 10 -->
+
+							<!-- Start Column 11 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Strawberry.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Strawberry</h3>
+									<strong class="product-price">RM9.00</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 11 -->
+
+							<!-- Start Column 12 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Ramphal.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Ramphal</h3>
+									<strong class="product-price">RM10.00</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 12 -->
+
+							<!-- Start Column 13 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Pomegranate.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Pomegranate</h3>
+									<strong class="product-price">RM7.00</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 13 -->
+
+							<!-- Start Column 14 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Carambola.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Carambola</h3>
+									<strong class="product-price">RM8.00</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 14 -->
+
+							<!-- Start Column 15 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\lemon.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">lemon</h3>
+									<strong class="product-price">RM2.00</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 15 -->
+
+							<!-- Start Column 16 -->
+							<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+								<a class="product-item" href="cart.html">
+									<img src="images\Papaya.png" class="img-fluid product-thumbnail">
+									<h3 class="product-title">Papaya</h3>
+									<strong class="product-price">RM7.50</strong>
+
+									<span class="icon-cross" data-title="" data-price="" data-image="">
+										<img src="images/cross.svg" class="img-fluid">
+									</span>
+								</a>
+							</div>
+							<!-- End Column 16 -->
+
+						</div>
+					</div>
+				</div>
+				<!-- End Product Section -->
+
+				<div class="pagi-nav text-right">
+					<span class="page current">1</span>
+					<span class="page"><a href="shop_page2.html" title="">2</a></span>
+					<span class="next"><a href="shop_page2.html" title="">
+							<i class="fa fa-angle-right"></i>
+						</a></span>
+				</div>
+				<!-- End Paginav -->
+
+				<br>
+				<br>
+				<!-- Start Footer Section -->
+				<footer class="footer-section">
+					<div class="container relative">
+
+						<div class="durian-img">
+							<img src="images\Durian.svg" alt="Image" class="img-fluid">
+						</div>
+
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="subscription-form">
+									<h3 class="d-flex align-items-center"><span class="me-1"><img
+												src="images/envelope-outline.svg" alt="Image"
+												class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+									<h4>Subscribe our newsletter and get discount 30% off</h4>
+
+									<form action="#" class="row g-3">
+										<div class="col-auto">
+											<input type="text" class="form-control" placeholder="Enter your name">
+										</div>
+										<div class="col-auto">
+											<input type="email" class="form-control" placeholder="Enter your email">
+										</div>
+										<div class="col-auto">
+											<button class="btn btn-primary">
+												<span class="fa fa-paper-plane"></span>
+											</button>
+										</div>
+									</form>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="row g-5 mb-5">
+							<div class="col-lg-4">
+								<div class="mb-4 footer-logo-wrap"><a href="#"
+										class="footer-logo">HappyFood<span>.</span></a></div>
+								<p class="mb-4">Healthy Food offers fresh and nutritious produce from local farms. Eat
+									well, live well.</p>
+
+								<ul class="list-unstyled custom-social">
+									<li><a href="/"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+									<li><a href="/"><span class="fa fa-brands fa-twitter"></span></a></li>
+									<li><a href="/"><span class="fa fa-brands fa-instagram"></span></a></li>
+									<li><a href="/"><span class="fa fa-brands fa-linkedin"></span></a></li>
+								</ul>
+							</div>
+
+							<div class="col-lg-3 col-md-4">
+								<div class="info_footer">
+									<div class="title_footer">
+										<h4 class="mb-0 title_border">HELP &amp; INFORMATION</h4>
+									</div>
+									<ul class="list-unstyled mb-0">
+										<li><a href="/" title="Pagination">Pagination</a></li>
+										<li><a href="/" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+										<li><a href="/" title="Contact">Contact</a></li>
+										<li><a href="/" title="Accessories">Accessories</a></li>
+										<li><a href="/" title="Term of use">Term of use</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-md-4">
+								<div class="info_footer">
+									<div class="title_footer">
+										<h4 class="mb-0 title_border">About us</h4>
+									</div>
+									<ul class="list-unstyled mb-0">
+										<li><a href="/" title="Help Center">Help Center</a></li>
+										<li><a href="/" title="Address Store">Address Store</a></li>
+										<li><a href="/" title="Privacy Policy">Privacy Policy</a></li>
+										<li><a href="/" title="Receivers &amp; Amplifiers">Receivers &amp;
+												Amplifiers</a></li>
+										<li><a href="/" title="Clothings">Clothings</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-md-4">
+								<div class="info_footer">
+									<div class="title_footer">
+										<h4 class="mb-0 title_border">Categories</h4>
+									</div>
+									<ul class="list-unstyled mb-0">
+										<li><a href="/" title="Organic">Organic</a></li>
+										<li><a href="/" title="New Fruits">New Fruits</a></li>
+										<li><a href="/" title="Product-Deal">Product-Deal</a></li>
+										<li><a href="/" title="Top Sale">Top Sale</a></li>
+										<li><a href="/" title="Vegetable">Vegetable</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="copyright">
+								<div class="container container-v2">
+									<div class="row align-items-center">
+										<div class="col-lg-6 col-md-6  text-lg-left text-md-left">
+											<p class="text-copyright mb-0">Copyright &copy;
+												<script>document.write(new Date().getFullYear());</script>. All Rights
+												Reserved. &mdash; Designed with love by
+											</p>
+											<a href="/">©HappyFood Online Store</a> Distributed By <a
+												hreff="https://themewagon.com">ThemeWagon</a>
+										</div>
+									</div>
+								</div>
+							</div>
+				</footer>
+				<!-- End Footer Section -->
+
+
+
+				<script src="js/bootstrap.bundle.min.js"></script>
+				<script src="js/tiny-slider.js"></script>
+				<script src="js/custom.js"></script>
+				<script src="js/cart.js"></script>
+				<script src="js/checkout.js"></script>
+				<script src="js/Generate-Receipt.js"></script>
+				<script src="js/Modal.js"></script>
+				<script src="js/Shop.js"></script>
+				<script src="js/TinySlider.js"></script>
+</body>
+
+</html>
